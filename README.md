@@ -1,3 +1,3 @@
 # TomCin
 
-esteja interessado 
+esteja desinteressado 
