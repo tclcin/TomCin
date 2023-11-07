@@ -27,6 +27,7 @@ elif n2 == 0:
 elif n3 == 0:
     print(f"{n3} não está gravado(a) na caixa, não adianta nem continuar que ela não vai abrir")
 
+
 if numeros_validos:
     palavra_valida = False
 
@@ -56,10 +57,6 @@ if numeros_validos and palavra_valida:
     else: 
         n3 *= 0.5
 
-    if n5 % 2 == 0:
-        n5 *= 2
-    else: 
-        n5 *= 0.5
 
     numero_final = (n5 * n1 * n2 * n3)**(1/2)
 
