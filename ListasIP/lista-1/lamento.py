@@ -26,8 +26,8 @@ elif n3 <= 0:
 
 
 
-if numeros_validos:
-    palavra_valida = False
+    if numeros_validos:
+        palavra_valida = False
 
     palavra = input()
     if palavra.islower():

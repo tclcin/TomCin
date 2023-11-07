@@ -54,13 +54,16 @@ if num_letras_string_1 == num_letras_string_2 == num_letras_string_3:
 if numero_definidor == 1:
     if len(maior_string) == len(meia_string) or len(maior_string) == len(menor_string):
         print("(Droga! Ainda não consegui descobrir o local que possui mais sinais desconhecidos! Vou ter que ficar mais um tempo nessa Mansão Mal-Assombrada...)")
-        print("AAAAAA! Um fantasma me assustou!")
-        print('''(Uma mensagem apareceu no monitor que você estava usando. "Agente, um erro inesperado aconteceu. A EPF contactará você novamente quando tudo estiver funcionando da forma correta. Nosso sistema foi invadido por alguém que se identifica como Hubert P.Enguin")''')
+        
 
         if (maior_string * (menor_string < maior_string > meia_string)) + (meia_string * (menor_string < meia_string > maior_string)) + (menor_string * (meia_string < menor_string > maior_string)) != "":
             print(f"{maior_string * (menor_string < maior_string > meia_string) + (meia_string * (menor_string < meia_string > maior_string)) + (menor_string * (meia_string < menor_string > maior_string))}")
             print('''(Ao terminar sua tarefa, uma mensagem apareceu no monitor que você estava usando. "Muito bem agente. A EPF agradece os seus esforços")''')
-    
+
+        else:
+             print("AAAAAA! Um fantasma me assustou!")
+             print('''(Uma mensagem apareceu no monitor que você estava usando. "Agente, um erro inesperado aconteceu. A EPF contactará você novamente quando tudo estiver funcionando da forma correta. Nosso sistema foi invadido por alguém que se identifica como Hubert P.Enguin")''')
+
     else:
         print(maior_string)
         print('''(Ao terminar sua tarefa, uma mensagem apareceu no monitor que você estava usando. "Muito bem agente. A EPF agradece os seus esforços")''')
@@ -68,12 +71,15 @@ if numero_definidor == 1:
 else:
     if len(menor_string) == len(meia_string) or len(menor_string) == len(maior_string):
         print("(Droga! Ainda não consegui descobrir o local que possui mais sinais desconhecidos! Vou ter que ficar mais um tempo nessa Mansão Mal-Assombrada...)")
-        print("AAAAAA! Um fantasma me assustou!")
-        print('''(Uma mensagem apareceu no monitor que você estava usando. "Agente, um erro inesperado aconteceu. A EPF contactará você novamente quando tudo estiver funcionando da forma correta. Nosso sistema foi invadido por alguém que se identifica como Hubert P.Enguin")''')
+
         if (maior_string * (menor_string < maior_string > meia_string)) + (meia_string * (menor_string < meia_string > maior_string)) + (menor_string * (meia_string < menor_string > maior_string)) != '':
             print(f"{(maior_string * (menor_string < maior_string > meia_string)) + (meia_string * (menor_string < meia_string > maior_string)) + (menor_string * (meia_string < menor_string > maior_string))}")
             print('''(Ao terminar sua tarefa, uma mensagem apareceu no monitor que você estava usando. "Muito bem agente. A EPF agradece os seus esforços")''')
-    
+        else:
+             print("AAAAAA! Um fantasma me assustou!")
+             print('''(Uma mensagem apareceu no monitor que você estava usando. "Agente, um erro inesperado aconteceu. A EPF contactará você novamente quando tudo estiver funcionando da forma correta. Nosso sistema foi invadido por alguém que se identifica como Hubert P.Enguin")''')
+
+
     else:
         print(menor_string)
         print('''(Ao terminar sua tarefa, uma mensagem apareceu no monitor que você estava usando. "Muito bem agente. A EPF agradece os seus esforços")''')
