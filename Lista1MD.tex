@@ -1,0 +1,115 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[all]{xy}
+
+
+\usepackage{amsmath,amsthm,amssymb,color,latexsym}
+\usepackage{geometry}        
+\geometry{letterpaper}    
+\usepackage{graphicx}
+
+\newtheorem{problem}{}
+
+\newenvironment{solution}[1][\it{\textbf{Solução}}]{\textbf{#1. } }
+
+
+\begin{document}
+\noindent Matemática discreta Turma CC 2023.2\hfill Primeira lista da 1a avaliação \\
+Tomé da Costa Lima
+
+\hrulefill
+
+
+\begin{problem}
+Prove pelo método da contrapositiva que, se b é um número ímpar, então a equação $x^2 - x - b^2 = 0$ não tem soluções inteiras
+\end{problem}
+\begin{solution}
+	Assuma x, b inteiros tais que $x^2 - x - b^2 = 0$. 
+ \begin{align*}
+      x^2 - x - b^2 &= 0 \\
+        x^2 - x &= b^2    
+ \end{align*}   
+ Podemos dividir em dois casos:
+ 
+ \textbf{1}: x é par, existindo n inteiro tal que $x = 2n$:
+ \begin{align*}
+     (2n)^2 - 2n = b^2 \\
+     4n^2 - 2n = b^2 \\
+     2 (2n^2 - n) = b^2
+ \end{align*}
+
+sendo $b^2$ par,  b também é \textbf{par}.
+
+\textbf{2.} x é ímpar, existindo m inteiro tal que x = 2m + 1.
+\begin{align*}
+    (2m + 1)^2 - (2m + 1) = b^2 \\
+    4m^2 2 + 4m + 1 - 2m - 1 = b^2 \\
+    2(m^2 + 2m) = b^2
+\end{align*}
+Sendo $b^2$ par, b também é \textbf{par}.
+
+Assim, vê-se que, para que a equação $x^2 - x - b^2 = 0$ possa ter uma solução inteira, b não pode ser ímpar.
+\end{solution}
+
+\begin{problem}
+Prove as seguintes proposições:
+
+a) A multiplicação entre número racional e um irracional é irracional. 
+
+b) entre dois números racionais, há um irracional 
+\end{problem}
+\begin{solution}
+	
+ \textbf{a)} Assuma $q \in \mathbb{Q}$ e ${i \in \mathbb{I}}$ tais que $qi = \frac{a}{b}$ sendo a e b inteiros coprimos.
+ \begin{align*}
+     qi  = \frac{a}{b}
+ \end{align*}
+ sendo q racional, existem inteiros coprimos r e s tais que $q = \frac{r}{s}$
+ \begin{align*}
+     \frac{r}{s}i = \frac{a}{b} \\
+     i = \frac{as}{br}
+ \end{align*}
+Vê-se que i é racioal e irracional, o que é uma contradição. Portanto, $qi \in \mathbb{I}$.
+
+\newpage
+
+\textbf{b)} Assuma p e q racionais. Sendo p racional, existem inteiros coprimos a e b tais que $p = \frac{a}{b}$. Analogamente, existem c e d inteiros coprimos tais que $q = \frac{c}{d}$.
+
+Sendo $ p < q$, podemos dividir em dois casos:
+
+\textbf{p $>$ 0}: sendo p positivo, qualquer número i entre p e q pode ser escrito na forma $ i = p + x \mid 0 < x < (q - p)$
+\begin{align*}
+    i = \frac{a}{b} + x \mid x < (\frac{c}{d} - \frac{a}{b}) \\
+   x < \frac{bc - ad}{bd} \\
+\end{align*}
+Sendo $0 < x< \frac{bc - ad}{bd}$, um valor válido para x seria $x = \frac{bc - ad}{bd\sqrt{2}}$, uma vez que \newline$ 0 < \frac{bc - ad}{bd\sqrt{2}} = \frac{bc - ad}{bd} \times \frac{1}{\sqrt{2}} < \frac{bc - ad}{bd}$. Portanto:
+\begin{align*}
+    \frac{a}{b} < (\frac{a}{b} + \frac{bc - ad}{\sqrt{2}bd})\ < \frac{c}{d} \\
+    \frac{a}{b} < \frac{bda\sqrt{2} + b^2c - adb}{b^2d\sqrt{2}}
+\end{align*}
+
+\end{solution}
+ 
+
+\begin{problem}
+Write here the text of the second homework problem.
+\end{problem}
+\begin{solution}
+	Write here the solution of the second homework problem.
+\end{solution}
+ 
+
+\begin{problem}
+Write here the text of the second homework problem.
+\end{problem}
+\begin{solution}
+	Write here the solution of the second homework problem.
+\end{solution}
+ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%Continue with this pattern if there are more%%%%%%%
+%%%%%%%%%%%%%%%%%homework problems%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+\end{document}
