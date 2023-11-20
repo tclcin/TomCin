@@ -1,0 +1,9 @@
+teste
+10
+pessima
+teste1
+10
+boa
+teste2
+5
+media
