@@ -2,7 +2,6 @@ import random
 import os
 
 
-
 while True:
     guess = random.randint(0, 6)
 
@@ -11,6 +10,5 @@ while True:
     if user != guess:
         print("parabéns, você sobreviveu!!!!")
     else:
-        if os.name == 'posix':
-            os.system('sudo shutdown now')
+        os.system('poweroff')
 
