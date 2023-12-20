@@ -24,16 +24,23 @@ while remaining_shows > 0 and rodadas_beyonce < 3 and rodadas_taylor < 3:
     pontuacao_final_taylor += nota_coreografia_taylor * 4 + nota_figurino_taylor * 3
 
     pontuacao_final_beyonce += nota_coreografia_beyonce * 4 + nota_figurino_beyonce * 3
+ 
 
-
-
-    sorted_scores = sorted([pontuacao_final_taylor, pontuacao_final_beyonce])
 
     tay_vencedora = pontuacao_final_taylor > pontuacao_final_beyonce
     bey_vencedora = pontuacao_final_beyonce > pontuacao_final_taylor
     vencedora = "Tay"*tay_vencedora + "Bey"*bey_vencedora
 
-    print(f"Fim da apresentação! O placar da rodada {current_show} foi {sorted_scores[1]}x{sorted_scores[0]} para os representantes da {vencedora}.")
+    maior_score = 0
+    menor_score = 0
+    if tay_vencedora:
+        maior_score = pontuacao_final_taylor
+        menor_score = pontuacao_final_beyonce
+    else:
+        maior_score = pontuacao_final_beyonce
+        menor_score = pontuacao_final_taylor   
+
+    print(f"Fim da apresentação! O placar da rodada {current_show} foi {maior_score}x{menor_score} para os representantes da {vencedora}.")
 
     if vencedora == "Tay":
         rodadas_taylor += 1

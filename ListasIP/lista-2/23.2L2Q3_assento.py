@@ -7,7 +7,7 @@ for i in range(qtd_songs):
     song_score = 0
     for letter in song:
         
-        if letter in ["a", "e", "i", "o", "u"]:
+        if (letter == 'a' or letter == 'e' or letter == 'i' or letter == 'o' or letter == 'u') :
             song_score += 1
         
         else:
